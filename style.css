@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color : rgb(146, 214, 253);
+    --secondary-color: rgb(13, 65, 65);
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Space Mono', monospace;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+input {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    border-radius: 4%;
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 5%;
+}
+
+.content {
+    width: 40%;
+}
+
+.calculator {
+    padding: 5%;
+    margin-left: 10%;
+    width: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 4%;
+}
+
+.person {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+h2 {
+    margin-left: 25%;
+    color: var(--main-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+.buttonreset {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    width: 100%;
+    border-radius: 4%;
+    border: none;
+    padding: 3%;
+    cursor: pointer;
+}
+
+.buttons button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.buttons button:hover {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+}
+
+.span {
+    color: white;
+}
+
+.span1 {
+    color: rgb(0, 121, 168);
+}
