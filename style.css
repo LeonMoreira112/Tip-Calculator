@@ -23,6 +23,11 @@ h1 {
 
 input {
     width: 100%;
+    padding: 5px;
+}
+
+.bill, .buttons, .number {
+    margin-top: 13px;
 }
 
 .container {
@@ -75,11 +80,39 @@ button {
 .buttons button {
     background-color: var(--secondary-color);
     color: white;
+    width: 80px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+
+.buttons input {
+    width: 65px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+}
+
+.buttons input::-webkit-input-placeholder{
+    font-style: bold;
+    color: var(--secondary-color);
+    font-style: bold;
+    background-size: 100%;
 }
 
 .buttons button:hover {
     color: var(--secondary-color);
     background-color: var(--main-color);
+}
+
+.buttons label {
+    display: block;
 }
 
 .span {
