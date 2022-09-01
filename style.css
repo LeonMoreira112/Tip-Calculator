@@ -7,6 +7,7 @@
 :root {
     --main-color : rgb(146, 214, 253);
     --secondary-color: rgb(13, 65, 65);
+    --thrid-color: rgb(7, 146, 146);
 }
 
 body {
@@ -26,16 +27,43 @@ input {
     padding: 5px;
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 .bill, .buttons, .number {
     margin-top: 13px;
+}
+
+.inputbill {
+    background-image: url(./images/cifrao.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    text-align: right;
+    border: 1px solid var(--main-color);
+    border-radius: 7px;
+}
+
+.peopleinput {
+    background-image: url(./images/user.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    text-align: right;
+    border: 1px solid var(--main-color);
+    border-radius: 7px;
 }
 
 .container {
     display: flex;
     border-radius: 4%;
     background-color: white;
-    width: 800px;
-    height: 300px;
+    width: 60%;
+    height: 70%%;
     margin: 0 auto;
     margin-top: 3%;
     padding: 5%;
@@ -69,12 +97,16 @@ button {
 
 .buttonreset {
     color: var(--secondary-color);
-    background-color: var(--main-color);
+    background-color: var(--thrid-color);
     width: 100%;
     border-radius: 4%;
     border: none;
     padding: 3%;
     cursor: pointer;
+}
+
+.buttonreset:hover {
+    background-color: var(--main-color);
 }
 
 .buttons button {
@@ -97,6 +129,8 @@ button {
     border-radius: 5px;
     border: none;
     font-weight: bolder;
+    text-align: center;
+    border: 1px solid var(--main-color);
 }
 
 .buttons input::-webkit-input-placeholder{
@@ -120,5 +154,5 @@ button {
 }
 
 .span1 {
-    color: rgb(0, 121, 168);
+    color: var(--thrid-color);
 }
