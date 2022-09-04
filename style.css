@@ -145,6 +145,11 @@ button {
     background-color: var(--main-color);
 }
 
+.buttonsselect {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+}
+
 .buttons label {
     display: block;
 }
