@@ -145,7 +145,7 @@ button {
     background-color: var(--main-color);
 }
 
-.buttonsselect {
+.buttons .buttonactive {
     color: var(--secondary-color);
     background-color: var(--main-color);
 }
@@ -160,4 +160,17 @@ button {
 
 .span1 {
     color: var(--thrid-color);
+}
+
+.error-msg {
+    display: flexbox;
+    font-size: 13px;
+    color: red;
+    margin-left: 14px;
+    opacity: 0;
+}
+
+.show-error-msg {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
 }

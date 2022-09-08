@@ -23,16 +23,17 @@
       </div>
       <div class="buttons">
           <label>Select Tip %</label>
-          <button value="00.5">5%</button>
-          <button value="0.10">10%</button>
-          <button value="0.15">15%</button>
-          <button value="0.25">25%</button>
-          <button value="0.50">50%</button>
-          <input type="text" placeholder="Custom">
+          <button class="btn5 btn" value="00.5">5%</button>
+          <button class="btn10 btn" value="0.1">10%</button>
+          <button class="buttonactive btn15 btn" value="0.15">15%</button>
+          <button class="btn25 btn" value="0.25">25%</button>
+          <button class="btn50 btn" value="0.5">50%</button>
+          <input class="custom" type="text" placeholder="Custom">
       </div>
       <div class="number">
         <label>
           Number Of People
+          <span class="error-msg">Can't be zero</span>
           <input class="peopleinput" type="text" placeholder="0">
         </label>
       </div>
@@ -42,14 +43,14 @@
         <div>
           <p class="span">Tip Total</p>
         </div>
-        <h2>$ 0.00</h2>
+        <h2 class="tiptotal results">$ 0.00</h2>
       </div>
       <div class="person">
         <div >
           <p class="span">Tip Amont</p>
           <p class="span1">/ person</p>
         </div>
-        <h2>$ 0.00</h2>
+        <h2 class="tipperson results">$ 0.00</h2>
       </div>
       <button class="buttonreset">RESET</button>
     </div>
