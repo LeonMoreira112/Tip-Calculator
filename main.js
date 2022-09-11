@@ -106,12 +106,14 @@ function setPersonValue(){
 
 function calculateTip(){
     if (personvalue >= 1){
-        let tipAmount = (billValue * tipValue) / personvalue
-        let total = billValue * (tipValue + 1) / personvalue
-        
-        Totalresults.innerHTML = '$' + tipAmount.toFixed(2)
-        Divideresults.innerHTML = '$' + total.toFixed(2)
+        let total = billValue * tipValue
+        let divide = billValue * tipValue / personvalue
 
-        console.log(tipAmount)
+        console.log(divide)
+        console.log(total)
+
+        
+        Totalresults.innerHTML = '$' + total.toFixed(2)
+        Divideresults.innerHTML = '$' + divide.toFixed(2)
     }
 }
