@@ -86,8 +86,9 @@ input:focus {
     margin-bottom: 10%;
 }
 
-h2 {
-    margin-left: 25%;
+.results {
+    font-size: 2em;
+    margin-left: 15%;
     color: var(--main-color);
 }
 

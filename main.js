@@ -20,7 +20,7 @@ numberpeople.addEventListener('input', setPersonValue)
 
 let billValue = 0.0
 let tipValue = 0.15
-let personvalue = 1
+let personvalue = 2
 
 function validadeFloat(s){
     var rgx = /^[0-9]*\.?[0-9]*$/;
@@ -107,10 +107,10 @@ function setPersonValue(){
 function calculateTip(){
     if (personvalue >= 1){
         let total = billValue * tipValue
-        let divide = billValue * tipValue / personvalue
+        let divide = (billValue * tipValue) / personvalue
 
-        console.log(divide)
         console.log(total)
+        console.log(divide)
 
         
         Totalresults.innerHTML = '$' + total.toFixed(2)
