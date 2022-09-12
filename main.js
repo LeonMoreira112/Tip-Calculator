@@ -20,7 +20,7 @@ numberpeople.addEventListener('input', setPersonValue)
 
 let billValue = 0.0
 let tipValue = 0.15
-let personvalue = 2
+let personvalue = 1
 
 function validadeFloat(s){
     var rgx = /^[0-9]*\.?[0-9]*$/;
@@ -62,12 +62,14 @@ function handleCLick(event){
             tipValue = btn.value
         }
     })
+
+    
 }
 
 //Clear custom tip
-custom.value = ''
+    custom.value = ''
 
-calculateTip()
+    calculateTip()
 
 function setCustomValue() {
     if(!validadeInt(custom.value)){
@@ -99,9 +101,9 @@ function setPersonValue(){
         setTimeout(function(){
             errorMsg.classList.remove('show-error-msg')
         },3000);
-
-        calculateTip()
     }
+
+    calculateTip()
 }
 
 function calculateTip(){
@@ -113,7 +115,7 @@ function calculateTip(){
         console.log(divide)
 
         
-        Totalresults.innerHTML = '$' + total.toFixed(2)
-        Divideresults.innerHTML = '$' + divide.toFixed(2)
+        Totalresults[0].innerHTML = "$" + total.toFixed(2);
+        Divideresults[0].innerHTML = "$" + divide.toFixed(2);
     }
 }
