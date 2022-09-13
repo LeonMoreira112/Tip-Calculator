@@ -5,18 +5,22 @@ const tipBtns = document.querySelectorAll('.btn')
 const numberpeople = document.querySelector('.peopleinput')
 const tiptotal = document.querySelector('.tiptotal')
 const person = document.querySelector('.tipperson')
-const btnrest = document.querySelector('.buttonreset')
 const errorMsg = document.querySelector('.error-msg')
 const Totalresults = document.querySelectorAll('.tiptotal')
 const Divideresults = document.querySelectorAll('.tipperson')
-const restbtn = document.querySelector('.buttonreset')
+const btnreset = document.querySelector('.buttonreset')
 
 bill.addEventListener('input', setBillValue);
+
 tipBtns.forEach(btn => {
     btn.addEventListener('click', handleCLick)
 })
+
 custom.addEventListener('input', setCustomValue)
+
 numberpeople.addEventListener('input', setPersonValue) 
+
+btnreset.addEventListener('click', reset)
 
 let billValue = 0.0
 let tipValue = 0.15
@@ -42,7 +46,7 @@ function setBillValue() {
         bill.value = bill.value.substring(0, bill.value.length-1)
     }
 
-    // Não permite que digite caracteres diferentes indevidos
+    // Não permite que digite caracteres indevidos
 
 
     billValue = parseFloat(bill.value);
@@ -118,4 +122,14 @@ function calculateTip(){
         Totalresults[0].innerHTML = "$" + total.toFixed(2);
         Divideresults[0].innerHTML = "$" + divide.toFixed(2);
     }
+}
+
+function reset() {
+    bill.value = '0'
+    setBillValue()
+
+    tipBtns[2].click()
+
+    personvalue = '1'
+    setPersonValue()
 }
