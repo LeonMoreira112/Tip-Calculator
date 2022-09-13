@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +18,14 @@ body {
 }
 
 h1 {
+    font-size: 3em;
     text-align: center;
     margin: 0 auto;
     margin-top: 3%;
 }
 
 input {
+    margin-top: 1%;
     width: 100%;
     padding: 5px;
 }
@@ -33,7 +36,7 @@ input:focus {
 }
 
 .bill, .buttons, .number {
-    margin-top: 13px;
+    margin-bottom: 5%;
 }
 
 .inputbill {
@@ -63,14 +66,14 @@ input:focus {
     border-radius: 4%;
     background-color: white;
     width: 60%;
-    height: 70%%;
+    height: 70%;
     margin: 0 auto;
     margin-top: 3%;
     padding: 5%;
 }
 
 .content {
-    width: 40%;
+    width: 50%;
 }
 
 .calculator {
@@ -88,7 +91,7 @@ input:focus {
 
 .results {
     font-size: 2em;
-    margin-left: 15%;
+    margin-left: 10%;
     color: var(--main-color);
 }
 
@@ -113,20 +116,18 @@ button {
 .buttons button {
     background-color: var(--secondary-color);
     color: white;
-    width: 80px;
-    padding: 7px;
+    width: 25%;
+    padding: 3%;
     border: none;
     border-radius: 5px;
     font-weight: bolder;
+    margin-top: 2%;
 }
 
-
 .buttons input {
-    width: 65px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 7px;
+    margin-top: 2%;
+    width: 21%;
+    padding: 2%;
     border-radius: 5px;
     border: none;
     font-weight: bolder;
@@ -165,13 +166,37 @@ button {
 
 .error-msg {
     display: flexbox;
-    font-size: 13px;
+    font-size: 0.8em;
     color: red;
-    margin-left: 14px;
+    margin-left: 5%;
     opacity: 0;
 }
 
 .show-error-msg {
     transition: opacity 1s ease-in-out;
     opacity: 1;
+}
+
+@media (max-width: 500px){
+    .container {
+        padding: 10%;
+        display: block;
+        width: 70%;
+    }
+    .content {
+        width: 100%;
+    }
+    
+    .calculator {
+        margin-top: 5%;
+        margin-left: 0;
+        width: 80%;
+        height: 25vh;
+    }
+    .billname {
+        display: block;
+    }
+    input {
+        width: 80%;
+    }
 }
